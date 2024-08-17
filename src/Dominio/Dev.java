@@ -8,14 +8,16 @@ import java.util.Set;
 public class Dev {
 
     private String nome;
-    private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
-    private Set<Conteudo> conteudosConcluido = new LinkedHashSet<>();
+    private final Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
+    private final Set<Conteudo> conteudosConcluido = new LinkedHashSet<>();
 
+    // Inscrição no Bootcamp
     public void inscreverBootcamp(Bootcamp bootcamp) {
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
         bootcamp.getDevsInscritos().add(this);
     }
 
+    // Progredir nos conteúdos, removendo do inscrito e adicionando ao concluído
     public void progredir() {
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
         if (conteudo.isPresent()) {
@@ -26,10 +28,12 @@ public class Dev {
         }
     }
 
+    // Cálculo do total de XP, começando do zero e acumulando com cada progresso
     public double calcularTotalXp() {
-       return this.conteudosInscritos.stream().mapToDouble(Conteudo::calcularXP).sum();
+        return this.conteudosConcluido.stream().mapToDouble(Conteudo::calcularXP).sum();
     }
 
+    // Getters e Setters necessários
     public String getNome() {
         return nome;
     }
@@ -42,24 +46,19 @@ public class Dev {
         return conteudosInscritos;
     }
 
-    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
-        this.conteudosInscritos = conteudosInscritos;
-    }
-
     public Set<Conteudo> getConteudosConcluido() {
         return conteudosConcluido;
     }
 
-    public void setConteudosConcluido(Set<Conteudo> conteudosConcluido) {
-        this.conteudosConcluido = conteudosConcluido;
-    }
-
+    // Métodos de igualdade e hashCode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dev dev = (Dev) o;
-        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluido, dev.conteudosConcluido);
+        return Objects.equals(nome, dev.nome) &&
+                Objects.equals(conteudosInscritos, dev.conteudosInscritos) &&
+                Objects.equals(conteudosConcluido, dev.conteudosConcluido);
     }
 
     @Override
