@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Claro - Java com Spring Boot/Claro - Java com Spring Boot.iml" filepath="$PROJECT_DIR$/Claro - Java com Spring Boot/Claro - Java com Spring Boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/PJ1/PJ1.iml" filepath="$PROJECT_DIR$/PJ1/PJ1.iml" />
       <module fileurl="file://$PROJECT_DIR$/PJ2/PJ2.iml" filepath="$PROJECT_DIR$/PJ2/PJ2.iml" />
       <module fileurl="file://$PROJECT_DIR$/PJ22/PJ22.iml" filepath="$PROJECT_DIR$/PJ22/PJ22.iml" />
@@ -9,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/PJ4/PJ4.iml" filepath="$PROJECT_DIR$/PJ4/PJ4.iml" />
       <module fileurl="file://$PROJECT_DIR$/PJ5/PJ5.iml" filepath="$PROJECT_DIR$/PJ5/PJ5.iml" />
       <module fileurl="file://$PROJECT_DIR$/PJ6/PJ6.iml" filepath="$PROJECT_DIR$/PJ6/PJ6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PJ7/PJ7.iml" filepath="$PROJECT_DIR$/PJ7/PJ7.iml" />
       <module fileurl="file://$PROJECT_DIR$/Projetos DIO.iml" filepath="$PROJECT_DIR$/Projetos DIO.iml" />
     </modules>
   </component>

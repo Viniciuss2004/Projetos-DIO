@@ -1,4 +1,4 @@
-package one.digitalinnivation;
+package main.java.one.digitalinnivation;
 
 /**
  * Hello world!

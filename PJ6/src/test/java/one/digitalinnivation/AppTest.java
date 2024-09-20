@@ -1,4 +1,4 @@
-package one.digitalinnivation;
+package test.java.one.digitalinnivation;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
