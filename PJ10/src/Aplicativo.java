@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Aplicativo {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         Banco banco = new Banco();
         MySQL conexao = new MySQL();
